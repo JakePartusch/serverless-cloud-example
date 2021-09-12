@@ -1,0 +1,14 @@
+{
+  "name": "my-cloud",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "cloud",
+    "ui"
+  ],
+  "scripts": {
+    "build": "yarn workspace ui build && cp -R ui/public cloud/static"
+  }
+}
